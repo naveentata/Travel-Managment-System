@@ -1,0 +1,12 @@
+{%  extends 'base.html' %}
+{% block title %}
+Travel Login
+{% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+<p>Welcome to the site, {% if user.is_authenticated %} <strong>{{ user.username }}</strong> {% else %} Visitor {% endif %}  !</p>
+
+<b>The total number of users Registered :</b>	{{ count }}
+
+{% endblock %}
